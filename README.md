@@ -16,9 +16,9 @@ The **main goal** of this project is to compare Transformer-based architectures 
 - **Backbone Frozen**: For both models, the backbone was kept frozen, and only the final fully connected (linear) layers were unfrozen.
 - **Trainable Parameters**: About 4k trainable parameters in the final linear layers for both models.
 - **Epochs**: 10 epochs.
-- **Batch Size**: The same batch size was used for both models.
-- **Learning Rate**: Identical learning rates for both models.
-- **Optimizers**: Same optimizer (e.g., Adam or SGD) for both models.
+- **Batch Size**: The same batch size 32 was used for both models.
+- **Learning Rate**: Identical learning rates 0.001 for both models.
+- **Optimizers**: Same optimizer 'Adam' for both models.
 - **Loss Function**: Binary cross-entropy loss function was used.
 
 ## Data Preprocessing
@@ -35,11 +35,7 @@ The following transformations were applied to the input images:
   - Tensor conversion and normalization (same as above)
 
 ## Files Included
-- **DINOv2 Model**: `dinov2_finetuned.pth`
-- **ResNet-50 Model**: `resnet50_finetuned.pth`
-- **Training Notebooks**:
-  - `resnet50_training.ipynb`
-  - `dinov2_training.ipynb`
+- Both Notebooks- ViT and CNN
 
 ## Results
 - **Goal**: To evaluate and compare the performance of the Transformer-based architecture (**DINOv2**) and the CNN-based architecture (**ResNet-50**) in terms of accuracy, speed (latency), and GPU memory usage.
